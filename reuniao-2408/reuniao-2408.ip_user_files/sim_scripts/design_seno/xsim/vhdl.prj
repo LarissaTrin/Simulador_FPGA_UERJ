@@ -1,0 +1,15 @@
+vhdl xil_defaultlib  \
+"../../../bd/design_seno/ipshared/d3cd/solution1/syn/vhdl/sen_second_order_eOg.vhd" \
+"../../../bd/design_seno/ipshared/d3cd/solution1/syn/vhdl/sen_second_order_dEe.vhd" \
+"../../../bd/design_seno/ipshared/d3cd/solution1/syn/vhdl/sen_second_order_cud.vhd" \
+"../../../bd/design_seno/ipshared/d3cd/solution1/syn/vhdl/sen_ref_4oPi_tablbkb.vhd" \
+"../../../bd/design_seno/ipshared/d3cd/solution1/syn/vhdl/sen_mux_83_1_1_1.vhd" \
+"../../../bd/design_seno/ipshared/d3cd/solution1/syn/vhdl/sen_mux_164_1_1_1.vhd" \
+"../../../bd/design_seno/ipshared/d3cd/solution1/syn/vhdl/sen_mul_mul_15ns_hbi.vhd" \
+"../../../bd/design_seno/ipshared/d3cd/solution1/syn/vhdl/sen_mul_mul_15ns_g8j.vhd" \
+"../../../bd/design_seno/ipshared/d3cd/solution1/syn/vhdl/sen_mul_80ns_24nsfYi.vhd" \
+"../../../bd/design_seno/ipshared/d3cd/solution1/syn/vhdl/sen.vhd" \
+"../../../bd/design_seno/ipshared/d3cd/solution1/syn/vhdl/scaled_fixed2ieee.vhd" \
+"../../../bd/design_seno/ip/design_seno_sen_0_0/sim/design_seno_sen_0_0.vhd" \
+
+nosort

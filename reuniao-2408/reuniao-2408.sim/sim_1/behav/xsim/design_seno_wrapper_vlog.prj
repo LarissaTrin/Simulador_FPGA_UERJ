@@ -1,0 +1,24 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../reuniao-2408.ip_user_files/bd/design_seno/ipshared/d3cd/solution1/impl/verilog/sen_second_order_eOg.v" \
+"../../../../reuniao-2408.ip_user_files/bd/design_seno/ipshared/d3cd/solution1/impl/verilog/sen_second_order_dEe.v" \
+"../../../../reuniao-2408.ip_user_files/bd/design_seno/ipshared/d3cd/solution1/impl/verilog/sen_second_order_cud.v" \
+"../../../../reuniao-2408.ip_user_files/bd/design_seno/ipshared/d3cd/solution1/impl/verilog/sen_ref_4oPi_tablbkb.v" \
+"../../../../reuniao-2408.ip_user_files/bd/design_seno/ipshared/d3cd/solution1/impl/verilog/sen_mux_83_1_1_1.v" \
+"../../../../reuniao-2408.ip_user_files/bd/design_seno/ipshared/d3cd/solution1/impl/verilog/sen_mux_164_1_1_1.v" \
+"../../../../reuniao-2408.ip_user_files/bd/design_seno/ipshared/d3cd/solution1/impl/verilog/sen_mul_mul_15ns_hbi.v" \
+"../../../../reuniao-2408.ip_user_files/bd/design_seno/ipshared/d3cd/solution1/impl/verilog/sen_mul_mul_15ns_g8j.v" \
+"../../../../reuniao-2408.ip_user_files/bd/design_seno/ipshared/d3cd/solution1/impl/verilog/sen_mul_80ns_24nsfYi.v" \
+"../../../../reuniao-2408.ip_user_files/bd/design_seno/ipshared/d3cd/solution1/impl/verilog/sen.v" \
+"../../../../reuniao-2408.ip_user_files/bd/design_seno/ipshared/d3cd/solution1/impl/verilog/scaled_fixed2ieee.v" \
+"../../../../reuniao-2408.ip_user_files/bd/design_seno/ip/design_seno_xlconstant_0_0/sim/design_seno_xlconstant_0_0.v" \
+"../../../../reuniao-2408.ip_user_files/bd/design_seno/ip/design_seno_xlconstant_1_0/sim/design_seno_xlconstant_1_0.v" \
+"../../../../reuniao-2408.ip_user_files/bd/design_seno/ip/design_seno_sim_clk_gen_0_0/sim/design_seno_sim_clk_gen_0_0.v" \
+"../../../../reuniao-2408.ip_user_files/bd/design_seno/sim/design_seno.v" \
+"../../../../reuniao-2408.srcs/sources_1/imports/hdl/design_seno_wrapper.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

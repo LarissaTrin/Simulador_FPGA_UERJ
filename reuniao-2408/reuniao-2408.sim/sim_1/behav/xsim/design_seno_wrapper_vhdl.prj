@@ -1,0 +1,17 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../reuniao-2408.ip_user_files/bd/design_seno/ipshared/d3cd/solution1/syn/vhdl/sen_second_order_eOg.vhd" \
+"../../../../reuniao-2408.ip_user_files/bd/design_seno/ipshared/d3cd/solution1/syn/vhdl/sen_second_order_dEe.vhd" \
+"../../../../reuniao-2408.ip_user_files/bd/design_seno/ipshared/d3cd/solution1/syn/vhdl/sen_second_order_cud.vhd" \
+"../../../../reuniao-2408.ip_user_files/bd/design_seno/ipshared/d3cd/solution1/syn/vhdl/sen_ref_4oPi_tablbkb.vhd" \
+"../../../../reuniao-2408.ip_user_files/bd/design_seno/ipshared/d3cd/solution1/syn/vhdl/sen_mux_83_1_1_1.vhd" \
+"../../../../reuniao-2408.ip_user_files/bd/design_seno/ipshared/d3cd/solution1/syn/vhdl/sen_mux_164_1_1_1.vhd" \
+"../../../../reuniao-2408.ip_user_files/bd/design_seno/ipshared/d3cd/solution1/syn/vhdl/sen_mul_mul_15ns_hbi.vhd" \
+"../../../../reuniao-2408.ip_user_files/bd/design_seno/ipshared/d3cd/solution1/syn/vhdl/sen_mul_mul_15ns_g8j.vhd" \
+"../../../../reuniao-2408.ip_user_files/bd/design_seno/ipshared/d3cd/solution1/syn/vhdl/sen_mul_80ns_24nsfYi.vhd" \
+"../../../../reuniao-2408.ip_user_files/bd/design_seno/ipshared/d3cd/solution1/syn/vhdl/sen.vhd" \
+"../../../../reuniao-2408.ip_user_files/bd/design_seno/ipshared/d3cd/solution1/syn/vhdl/scaled_fixed2ieee.vhd" \
+"../../../../reuniao-2408.ip_user_files/bd/design_seno/ip/design_seno_sen_0_0/sim/design_seno_sen_0_0.vhd" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,34 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lalat/Documents/IC/Simulador_FPGA_UERJ-master/reuniao-2408/reuniao-2408.ip_user_files/bd/design_seno/ipshared/d3cd/solution1/impl/verilog/sen_second_order_cud.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sen_second_order_cud_rom
+INFO: [VRFC 10-311] analyzing module sen_second_order_cud
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lalat/Documents/IC/Simulador_FPGA_UERJ-master/reuniao-2408/reuniao-2408.ip_user_files/bd/design_seno/ipshared/d3cd/solution1/impl/verilog/sen_mux_83_1_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sen_mux_83_1_1_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lalat/Documents/IC/Simulador_FPGA_UERJ-master/reuniao-2408/reuniao-2408.ip_user_files/bd/design_seno/ipshared/d3cd/solution1/impl/verilog/sen_mux_164_1_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sen_mux_164_1_1_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lalat/Documents/IC/Simulador_FPGA_UERJ-master/reuniao-2408/reuniao-2408.ip_user_files/bd/design_seno/ipshared/d3cd/solution1/impl/verilog/sen_mul_mul_15ns_hbi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sen_mul_mul_15ns_hbi_DSP48_1
+INFO: [VRFC 10-311] analyzing module sen_mul_mul_15ns_hbi
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lalat/Documents/IC/Simulador_FPGA_UERJ-master/reuniao-2408/reuniao-2408.ip_user_files/bd/design_seno/ipshared/d3cd/solution1/impl/verilog/sen_mul_mul_15ns_g8j.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sen_mul_mul_15ns_g8j_DSP48_0
+INFO: [VRFC 10-311] analyzing module sen_mul_mul_15ns_g8j
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lalat/Documents/IC/Simulador_FPGA_UERJ-master/reuniao-2408/reuniao-2408.ip_user_files/bd/design_seno/ipshared/d3cd/solution1/impl/verilog/sen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lalat/Documents/IC/Simulador_FPGA_UERJ-master/reuniao-2408/reuniao-2408.ip_user_files/bd/design_seno/ipshared/d3cd/solution1/impl/verilog/scaled_fixed2ieee.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module scaled_fixed2ieee
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lalat/Documents/IC/Simulador_FPGA_UERJ-master/reuniao-2408/reuniao-2408.ip_user_files/bd/design_seno/ipshared/d3cd/solution1/syn/vhdl/sen_second_order_cud.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'sen_second_order_cud_rom'
+INFO: [VRFC 10-3107] analyzing entity 'sen_second_order_cud'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lalat/Documents/IC/Simulador_FPGA_UERJ-master/reuniao-2408/reuniao-2408.ip_user_files/bd/design_seno/ipshared/d3cd/solution1/syn/vhdl/sen_mux_83_1_1_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'sen_mux_83_1_1_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lalat/Documents/IC/Simulador_FPGA_UERJ-master/reuniao-2408/reuniao-2408.ip_user_files/bd/design_seno/ipshared/d3cd/solution1/syn/vhdl/sen_mux_164_1_1_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'sen_mux_164_1_1_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lalat/Documents/IC/Simulador_FPGA_UERJ-master/reuniao-2408/reuniao-2408.ip_user_files/bd/design_seno/ipshared/d3cd/solution1/syn/vhdl/sen_mul_mul_15ns_hbi.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'sen_mul_mul_15ns_hbi_DSP48_1'
+INFO: [VRFC 10-3107] analyzing entity 'sen_mul_mul_15ns_hbi'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lalat/Documents/IC/Simulador_FPGA_UERJ-master/reuniao-2408/reuniao-2408.ip_user_files/bd/design_seno/ipshared/d3cd/solution1/syn/vhdl/sen_mul_mul_15ns_g8j.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'sen_mul_mul_15ns_g8j_DSP48_0'
+INFO: [VRFC 10-3107] analyzing entity 'sen_mul_mul_15ns_g8j'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lalat/Documents/IC/Simulador_FPGA_UERJ-master/reuniao-2408/reuniao-2408.ip_user_files/bd/design_seno/ipshared/d3cd/solution1/syn/vhdl/sen.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'sen'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lalat/Documents/IC/Simulador_FPGA_UERJ-master/reuniao-2408/reuniao-2408.ip_user_files/bd/design_seno/ipshared/d3cd/solution1/syn/vhdl/scaled_fixed2ieee.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'scaled_fixed2ieee'
