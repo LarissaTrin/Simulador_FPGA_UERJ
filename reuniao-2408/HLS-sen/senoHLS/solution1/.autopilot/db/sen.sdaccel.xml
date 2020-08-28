@@ -1,0 +1,209 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'sen'" level="0">
+<item name = "Date">Mon Aug 24 15:16:53 2020
+</item>
+<item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
+<item name = "Project">senoHLS</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">aartix7</item>
+<item name = "Target device">xa7a12tcsg325-1q</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Target clock period (ns)">10.00</item>
+<item name = "Clock uncertainty (ns)">1.25</item>
+<item name = "Estimated clock period (ns)">8.026</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">22, 26, 22, 26, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+<column name="grp_scaled_fixed2ieee_fu_214">scaled_fixed2ieee, 7, 11, 7, 11, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="DSP">-, 2, -, -</column>
+<column name="Expression">-, 6, 40, 1292</column>
+<column name="FIFO">-, -, -, -</column>
+<column name="Instance">-, 5, 840, 1211</column>
+<column name="Memory">-, -, 168, 293</column>
+<column name="Multiplexer">-, -, -, 85</column>
+<column name="Register">-, -, 596, -</column>
+<specialColumn name="Available">40, 40, 16000, 8000</specialColumn>
+<specialColumn name="Utilization (%)">0, 32, 10, 36</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="grp_scaled_fixed2ieee_fu_214">scaled_fixed2ieee, 0, 0, 399, 760</column>
+<column name="sen_mul_80ns_24nsfYi_U3">sen_mul_80ns_24nsfYi, 0, 5, 441, 256</column>
+<column name="sen_mux_164_1_1_1_U5">sen_mux_164_1_1_1, 0, 0, 0, 65</column>
+<column name="sen_mux_164_1_1_1_U6">sen_mux_164_1_1_1, 0, 0, 0, 65</column>
+<column name="sen_mux_83_1_1_1_U4">sen_mux_83_1_1_1, 0, 0, 0, 65</column>
+</table>
+</item>
+<item name = "DSP48"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+<column name="sen_mul_mul_15ns_g8j_U7">sen_mul_mul_15ns_g8j, i0 * i0</column>
+<column name="sen_mul_mul_15ns_hbi_U8">sen_mul_mul_15ns_hbi, i0 * i1</column>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="9">Memory, Module, BRAM_18K, FF, LUT, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="ref_4oPi_table_100_V_U">sen_ref_4oPi_tablbkb, 0, 100, 21, 13, 100, 1, 1300</column>
+<column name="second_order_float_2_U">sen_second_order_cud, 0, 30, 120, 256, 30, 1, 7680</column>
+<column name="second_order_float_3_U">sen_second_order_dEe, 0, 23, 92, 256, 23, 1, 5888</column>
+<column name="second_order_float_s_U">sen_second_order_eOg, 0, 15, 60, 256, 15, 1, 3840</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="7">Name, BRAM_18K, FF, LUT, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="r_V_12_fu_619_p2">*, 2, 0, 32, 23, 22</column>
+<column name="r_V_14_fu_689_p2">*, 4, 0, 29, 30, 29</column>
+<column name="expv_op_i_i_fu_252_p2">+, 0, 0, 15, 7, 8</column>
+<column name="p_1_i_i_fu_419_p2">+, 0, 0, 15, 8, 8</column>
+<column name="ret_V_11_fu_662_p2">+, 0, 0, 30, 30, 30</column>
+<column name="ret_V_fu_671_p2">+, 0, 0, 30, 30, 30</column>
+<column name="Ex_V_fu_452_p2">-, 0, 0, 15, 8, 8</column>
+<column name="Mx_bits_V_1_fu_359_p2">-, 0, 0, 65, 1, 58</column>
+<column name="ret_V_2_fu_710_p2">-, 0, 0, 16, 1, 9</column>
+<column name="tmp_20_i_i_fu_470_p2">-, 0, 0, 16, 1, 9</column>
+<column name="not_or_cond_i_demorg_fu_860_p2">and, 0, 0, 8, 1, 1</column>
+<column name="or_cond_i_fu_831_p2">and, 0, 0, 8, 1, 1</column>
+<column name="val_assign_fu_407_p3">cttz, 0, 40, 36, 32, 0</column>
+<column name="closepath_fu_246_p2">icmp, 0, 0, 11, 8, 7</column>
+<column name="tmp_27_i_fu_484_p2">icmp, 0, 0, 11, 8, 1</column>
+<column name="tmp_28_i_fu_324_p2">icmp, 0, 0, 18, 23, 1</column>
+<column name="tmp_29_i_fu_489_p2">icmp, 0, 0, 11, 8, 2</column>
+<column name="tmp_22_i_i_fu_503_p2">lshr, 0, 0, 89, 29, 29</column>
+<column name="tmp_11_i_fu_840_p2">or, 0, 0, 8, 1, 1</column>
+<column name="tmp_2_fu_878_p2">or, 0, 0, 8, 1, 1</column>
+<column name="Mx_V_read_assign_fu_650_p3">select, 0, 0, 29, 1, 2</column>
+<column name="addr_V_fu_258_p3">select, 0, 0, 8, 1, 6</column>
+<column name="p_0237_0_in_i_i_fu_518_p3">select, 0, 0, 32, 1, 32</column>
+<column name="p_Ex_V_ret_i_fu_677_p3">select, 0, 0, 8, 1, 1</column>
+<column name="p_Repl2_3_fu_853_p3">select, 0, 0, 2, 1, 1</column>
+<column name="p_Repl2_9_trunc_s_fu_845_p3">select, 0, 0, 2, 1, 1</column>
+<column name="p_Result_1_i_cast_fu_891_p3">select, 0, 0, 2, 1, 2</column>
+<column name="p_Result_i_cast_fu_870_p3">select, 0, 0, 2, 1, 2</column>
+<column name="p_Val2_25_fu_349_p3">select, 0, 0, 3, 1, 1</column>
+<column name="p_Val2_7_fu_364_p3">select, 0, 0, 58, 1, 58</column>
+<column name="ret_V_8_fu_883_p3">select, 0, 0, 8, 1, 8</column>
+<column name="ret_V_9_fu_899_p3">select, 0, 0, 23, 1, 23</column>
+<column name="storemerge_i_i_fu_424_p3">select, 0, 0, 8, 1, 8</column>
+<column name="tmp_26_i_fu_824_p3">select, 0, 0, 2, 1, 1</column>
+<column name="ush_fu_476_p3">select, 0, 0, 9, 1, 9</column>
+<column name="r_V_10_fu_434_p2">shl, 0, 0, 170, 58, 58</column>
+<column name="r_V_9_fu_288_p2">shl, 0, 0, 330, 100, 100</column>
+<column name="tmp_25_i_i_fu_512_p2">shl, 0, 0, 101, 32, 32</column>
+<column name="not_or_cond_i_fu_864_p2">xor, 0, 0, 8, 1, 2</column>
+<column name="not_tmp_i_fu_835_p2">xor, 0, 0, 8, 1, 2</column>
+<column name="sin_basis_fu_570_p2">xor, 0, 0, 8, 1, 2</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">85, 17, 1, 17</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="B_V_reg_1062">22, 0, 22, 0</column>
+<column name="B_squared_V_reg_1087">15, 0, 15, 0</column>
+<column name="B_trunc_V_reg_1067">15, 0, 15, 0</column>
+<column name="Ex_V_reg_1026">8, 0, 8, 0</column>
+<column name="Med_V_reg_970">80, 0, 80, 0</column>
+<column name="Mx_V_read_assign_reg_1117">29, 0, 29, 0</column>
+<column name="Mx_V_reg_1019">29, 0, 29, 0</column>
+<column name="Mx_zeros_V_reg_1013">5, 0, 5, 0</column>
+<column name="ap_CS_fsm">16, 0, 16, 0</column>
+<column name="closepath_reg_954">1, 0, 1, 0</column>
+<column name="cos_basis_reg_1055">1, 0, 1, 0</column>
+<column name="grp_scaled_fixed2ieee_fu_214_ap_start_reg">1, 0, 1, 0</column>
+<column name="isNeg_reg_1031">1, 0, 1, 0</column>
+<column name="p_Val2_24_reg_991">58, 0, 58, 0</column>
+<column name="p_Val2_25_reg_1002">3, 0, 3, 0</column>
+<column name="p_Val2_7_reg_1008">58, 0, 58, 0</column>
+<column name="result_V_reg_1127">29, 0, 29, 0</column>
+<column name="resultf_reg_1137">32, 0, 32, 0</column>
+<column name="results_sign_V_1_reg_935">1, 0, 1, 0</column>
+<column name="ret_V_2_reg_1132">9, 0, 9, 0</column>
+<column name="ret_V_reg_1122">30, 0, 30, 0</column>
+<column name="second_order_float_6_reg_1097">23, 0, 23, 0</column>
+<column name="second_order_float_8_reg_1102">15, 0, 15, 0</column>
+<column name="t1_V_reg_1092">29, 0, 29, 0</column>
+<column name="tmp_12_i_i_reg_997">3, 0, 3, 0</column>
+<column name="tmp_27_i_reg_1042">1, 0, 1, 0</column>
+<column name="tmp_28_i_reg_985">1, 0, 1, 0</column>
+<column name="tmp_29_i_reg_1048">1, 0, 1, 0</column>
+<column name="tmp_6_reg_965">4, 0, 4, 0</column>
+<column name="tmp_7_i_i_reg_1107">22, 0, 22, 0</column>
+<column name="tmp_9_i_i_reg_1112">14, 0, 14, 0</column>
+<column name="tmp_V_1_reg_948">23, 0, 23, 0</column>
+<column name="tmp_V_reg_941">8, 0, 8, 0</column>
+<column name="ush_reg_1036">9, 0, 9, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, sen, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, sen, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, sen, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, sen, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, sen, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, sen, return value</column>
+<column name="ap_return">out, 32, ap_ctrl_hs, sen, return value</column>
+<column name="Entrada">in, 32, ap_none, Entrada, scalar</column>
+</table>
+</item>
+</section>
+
+<section name = "Critical Path" level="0">
+<item name = "Max Delay">8.03</item>
+<item name = "Critical Path Table"><table name="Critical Path Table" hasTotal="0">
+<keys size="15">Name, Operator, Delay, Accumulated Delay, Store Source, Resource, Core, Interface, Type, Port, Array, Scope, Pointer, Callee, Phi Node</keys>
+<column name="'Mx_bits.V', r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:520->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:267->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/common/hls_hotbm_float.cpp:122->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/c/sincosfloat.cpp:7->C:/Xilinx/Vivado/2018.3/win64/tools/clang/bin\..\lib\clang\3.1/../../../include/c++/4.5.2\cmath:402->../../C++/sen.cpp:13">sub, 3.40, 3.40, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'__Val2__', r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:519->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:267->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/common/hls_hotbm_float.cpp:122->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/c/sincosfloat.cpp:7->C:/Xilinx/Vivado/2018.3/win64/tools/clang/bin\..\lib\clang\3.1/../../../include/c++/4.5.2\cmath:402->../../C++/sen.cpp:13">select, 1.37, 4.77, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'p_Result_i_i_i', r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_normalize.h:100->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:523->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:267->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/common/hls_hotbm_float.cpp:122->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/c/sincosfloat.cpp:7->C:/Xilinx/Vivado/2018.3/win64/tools/clang/bin\..\lib\clang\3.1/../../../include/c++/4.5.2\cmath:402->../../C++/sen.cpp:13">partselect, 0.00, 4.77, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'__Result__', r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_normalize.h:101->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:523->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:267->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/common/hls_hotbm_float.cpp:122->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/c/sincosfloat.cpp:7->C:/Xilinx/Vivado/2018.3/win64/tools/clang/bin\..\lib\clang\3.1/../../../include/c++/4.5.2\cmath:402->../../C++/sen.cpp:13">bitconcatenate, 0.00, 4.77, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'__Result__', r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_normalize.h:103->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:523->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:267->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/common/hls_hotbm_float.cpp:122->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/c/sincosfloat.cpp:7->C:/Xilinx/Vivado/2018.3/win64/tools/clang/bin\..\lib\clang\3.1/../../../include/c++/4.5.2\cmath:402->../../C++/sen.cpp:13">partselect, 0.00, 4.77, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'__Result__', r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_normalize.h:103->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:523->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:267->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/common/hls_hotbm_float.cpp:122->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/c/sincosfloat.cpp:7->C:/Xilinx/Vivado/2018.3/win64/tools/clang/bin\..\lib\clang\3.1/../../../include/c++/4.5.2\cmath:402->../../C++/sen.cpp:13">bitconcatenate, 0.00, 4.77, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'val', r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_normalize.h:103->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:523->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:267->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/common/hls_hotbm_float.cpp:122->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/c/sincosfloat.cpp:7->C:/Xilinx/Vivado/2018.3/win64/tools/clang/bin\..\lib\clang\3.1/../../../include/c++/4.5.2\cmath:402->../../C++/sen.cpp:13">cttz, 3.25, 8.03, -, -, -, -, -, -, -, -, -, -, -</column>
+</table>
+</item>
+</section>
+</profile>

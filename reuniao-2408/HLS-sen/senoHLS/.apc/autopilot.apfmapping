@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="sen.cpp" path="C:\Users\lalat\Documents\IC\C++\sen.cpp"/>
+    <originFiles name="sen.h" path="C:\Users\lalat\Documents\IC\C++\sen.h"/>
+  </source>
+  <testbench/>
+</autopilotfilemapping:AutoPilotFileMapping>

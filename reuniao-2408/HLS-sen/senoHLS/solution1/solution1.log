@@ -1,0 +1,424 @@
+==============================================================
+File generated on Mon Aug 24 14:18:23 -0300 2020
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xa7a12tcsg325-1q'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file '../../C++/sen.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:20 . Memory (MB): peak = 102.156 ; gain = 20.031
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:20 . Memory (MB): peak = 102.156 ; gain = 20.031
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:05 ; elapsed = 00:00:27 . Memory (MB): peak = 260.957 ; gain = 178.832
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function '_ZN9fp_structIdEC2Ed8' into '_ZN9fp_structIdEC1Ed4' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:479) automatically.
+INFO: [XFORM 203-602] Inlining function '_ZN9fp_structIdEC1Ed4' into 'range_redux_payne_hanek_hotbm<61, double, 63, 63>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:468) automatically.
+INFO: [XFORM 203-602] Inlining function '_ZNK9fp_structIdE4expvEv6' into 'range_redux_payne_hanek_hotbm<61, double, 63, 63>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:469) automatically.
+INFO: [XFORM 203-602] Inlining function 'table_lookup_4oPi_hotbm<52, 61>' into 'range_redux_payne_hanek_hotbm<61, double, 63, 63>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:495) automatically.
+INFO: [XFORM 203-602] Inlining function 'clz<61, 124, 0>' into 'range_redux_payne_hanek_hotbm<61, double, 63, 63>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:523) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::data' into 'fp_struct<double>::to_double' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:512) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_double' into 'fp_struct<double>::to_ieee' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:526) automatically.
+INFO: [XFORM 203-602] Inlining function 'clz' into 'scaled_fixed2ieee<63, 1>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:435) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::set_mantissa' into 'scaled_fixed2ieee<63, 1>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:463) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_ieee' into 'scaled_fixed2ieee<63, 1>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:466) automatically.
+INFO: [XFORM 203-602] Inlining function '_ZN9fp_structIdEC1Ed4' into 'hotbm_::sin_or_cos<double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:251) automatically.
+INFO: [XFORM 203-602] Inlining function 'hotbm_::value_list<double>::sin_or_cos_approximation<63, 63>' into 'hotbm_::sin_or_cos<double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:278) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_ieee' into 'hotbm_::sin_or_cos<double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:315) automatically.
+INFO: [XFORM 203-602] Inlining function 'hotbm_::sin' into 'sin' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/c/sincosdouble.cpp:7) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::mantissa' into 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:14) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::expv' into 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::__signbit' into 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:58) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' into 'generic_cast_IEEE754<int, double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, double>' into '__hls_fptosi_double_i32' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54) automatically.
+INFO: [XFORM 203-602] Inlining function 'sin' into 'sen' (../../C++/sen.cpp:14) automatically.
+INFO: [XFORM 203-602] Inlining function '__hls_fptosi_double_i32' into 'sen' (../../C++/sen.cpp:15) automatically.
+WARNING: [SYNCHK 200-23] r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:425: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:06 ; elapsed = 00:00:29 . Memory (MB): peak = 309.152 ; gain = 227.027
+INFO: [XFORM 203-102] Automatically partitioning small array 'out_bits.V' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:422) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'c' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:433) completely based on array size.
+INFO: [XFORM 203-101] Partitioning array 'swap_table.1'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'swap_table'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'neg_sin_table'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'neg_cos_table'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'out_bits.V' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:422) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'c' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:433) in dimension 1 completely.
+INFO: [XFORM 203-602] Inlining function '_ZN9fp_structIdEC2Ed8' into '_ZN9fp_structIdEC1Ed4' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:479) automatically.
+INFO: [XFORM 203-602] Inlining function '_ZN9fp_structIdEC1Ed4' into 'range_redux_payne_hanek_hotbm<61, double, 63, 63>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:468) automatically.
+INFO: [XFORM 203-602] Inlining function '_ZNK9fp_structIdE4expvEv6' into 'range_redux_payne_hanek_hotbm<61, double, 63, 63>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:469) automatically.
+INFO: [XFORM 203-602] Inlining function 'table_lookup_4oPi_hotbm<52, 61>' into 'range_redux_payne_hanek_hotbm<61, double, 63, 63>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:495) automatically.
+INFO: [XFORM 203-602] Inlining function 'clz<61, 124, 0>' into 'range_redux_payne_hanek_hotbm<61, double, 63, 63>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:523) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::data' into 'fp_struct<double>::to_double' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:512) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_double' into 'fp_struct<double>::to_ieee' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:526) automatically.
+INFO: [XFORM 203-602] Inlining function 'clz' into 'scaled_fixed2ieee<63, 1>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:435) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::set_mantissa' into 'scaled_fixed2ieee<63, 1>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:463) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_ieee' into 'scaled_fixed2ieee<63, 1>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:466) automatically.
+INFO: [XFORM 203-602] Inlining function '_ZN9fp_structIdEC1Ed4' into 'hotbm_::sin_or_cos<double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:251) automatically.
+INFO: [XFORM 203-602] Inlining function 'range_redux_payne_hanek_hotbm<61, double, 63, 63>' into 'hotbm_::sin_or_cos<double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:267) automatically.
+INFO: [XFORM 203-602] Inlining function 'hotbm_::value_list<double>::sin_or_cos_approximation<63, 63>' into 'hotbm_::sin_or_cos<double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:278) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_ieee' into 'hotbm_::sin_or_cos<double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:315) automatically.
+INFO: [XFORM 203-602] Inlining function 'hotbm_::sin' into 'sin' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/c/sincosdouble.cpp:7) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::mantissa' into 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:14) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::expv' into 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::__signbit' into 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:58) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' into 'generic_cast_IEEE754<int, double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, double>' into '__hls_fptosi_double_i32' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54) automatically.
+INFO: [XFORM 203-602] Inlining function 'sin' into 'sen' (../../C++/sen.cpp:14) automatically.
+INFO: [XFORM 203-602] Inlining function '__hls_fptosi_double_i32' into 'sen' (../../C++/sen.cpp:15) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:452:51) to (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:467:1) in function 'scaled_fixed2ieee<63, 1>'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:237:18) to (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:315:12) in function 'hotbm_::sin_or_cos<double>'... converting 10 basic blocks.
+INFO: [XFORM 203-602] Inlining function 'hotbm_::sin_or_cos<double>' into 'sen' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/common/hls_hotbm_double.cpp:139->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/c/sincosdouble.cpp:7->../../C++/sen.cpp:14) automatically.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:08 ; elapsed = 00:00:31 . Memory (MB): peak = 424.996 ; gain = 342.871
+WARNING: [XFORM 203-631] Renaming function 'scaled_fixed2ieee<63, 1>' to 'scaled_fixed2ieee' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:109:37)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:09 ; elapsed = 00:00:32 . Memory (MB): peak = 456.773 ; gain = 374.648
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'sen' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'scaled_fixed2ieee' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 32.281 seconds; current allocated memory: 389.712 MB.
+INFO: [HLS 200-434] Only 0 loops out of a total 3 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.213 seconds; current allocated memory: 390.232 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'sen' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.933 seconds; current allocated memory: 391.580 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.413 seconds; current allocated memory: 392.469 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'scaled_fixed2ieee' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'sen_mux_42_32_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'scaled_fixed2ieee'.
+INFO: [HLS 200-111]  Elapsed time: 0.701 seconds; current allocated memory: 393.220 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'sen' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'sen/Entrada' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'sen' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'sen_ref_4oPi_table_256_V' to 'sen_ref_4oPi_tablbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'sen_fourth_order_double_4' to 'sen_fourth_order_cud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'sen_fourth_order_double_5' to 'sen_fourth_order_dEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'sen_fourth_order_double_6' to 'sen_fourth_order_eOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'sen_fourth_order_double_7' to 'sen_fourth_order_fYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'sen_fourth_order_double_s' to 'sen_fourth_order_g8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'sen_dmul_64ns_64ns_64_6_max_dsp_1' to 'sen_dmul_64ns_64nhbi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'sen_ddiv_64ns_64ns_64_31_1' to 'sen_ddiv_64ns_64nibs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'sen_sitodp_32ns_64_5_1' to 'sen_sitodp_32ns_6jbC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'sen_mul_53ns_170ns_223_5_1' to 'sen_mul_53ns_170nkbM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'sen_mul_49ns_49ns_98_2_1' to 'sen_mul_49ns_49nslbW' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'sen_mul_52s_56ns_108_2_1' to 'sen_mul_52s_56ns_mb6' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'sen_mul_44s_49ns_93_2_1' to 'sen_mul_44s_49ns_ncg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'sen_mul_33ns_42ns_75_2_1' to 'sen_mul_33ns_42nsocq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'sen_mul_63ns_64s_126_5_1' to 'sen_mul_63ns_64s_pcA' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'sen_ddiv_64ns_64nibs': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sen_dmul_64ns_64nhbi': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sen_mul_33ns_42nsocq': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sen_mul_44s_49ns_ncg': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sen_mul_49ns_49nslbW': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sen_mul_52s_56ns_mb6': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sen_mul_53ns_170nkbM': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sen_mul_63ns_64s_pcA': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sen_mux_164_1_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sen_mux_83_1_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sen_sitodp_32ns_6jbC': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'sen'.
+INFO: [HLS 200-111]  Elapsed time: 0.701 seconds; current allocated memory: 395.201 MB.
+INFO: [RTMG 210-282] Generating pipelined core: 'sen_mul_53ns_170nkbM_MulnS_0'
+INFO: [RTMG 210-282] Generating pipelined core: 'sen_mul_49ns_49nslbW_MulnS_1'
+INFO: [RTMG 210-282] Generating pipelined core: 'sen_mul_52s_56ns_mb6_MulnS_2'
+INFO: [RTMG 210-282] Generating pipelined core: 'sen_mul_44s_49ns_ncg_MulnS_3'
+INFO: [RTMG 210-282] Generating pipelined core: 'sen_mul_33ns_42nsocq_MulnS_4'
+INFO: [RTMG 210-282] Generating pipelined core: 'sen_mul_63ns_64s_pcA_MulnS_5'
+INFO: [RTMG 210-279] Implementing memory 'sen_ref_4oPi_tablbkb_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'sen_fourth_order_cud_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'sen_fourth_order_dEe_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'sen_fourth_order_eOg_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'sen_fourth_order_fYi_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'sen_fourth_order_g8j_rom' using distributed ROMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:14 ; elapsed = 00:00:40 . Memory (MB): peak = 464.652 ; gain = 382.527
+INFO: [SYSC 207-301] Generating SystemC RTL for sen.
+INFO: [VHDL 208-304] Generating VHDL RTL for sen.
+INFO: [VLOG 209-307] Generating Verilog RTL for sen.
+INFO: [HLS 200-112] Total elapsed time: 40.198 seconds; peak allocated memory: 395.201 MB.
+==============================================================
+File generated on Mon Aug 24 14:46:18 -0300 2020
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xa7a12tcsg325-1q'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file '../../C++/sen.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:32 . Memory (MB): peak = 102.359 ; gain = 17.555
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:32 . Memory (MB): peak = 102.359 ; gain = 17.555
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:00:41 . Memory (MB): peak = 221.555 ; gain = 136.750
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::expv' into 'range_redux_payne_hanek_hotbm<61, double, 63, 63>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:469) automatically.
+INFO: [XFORM 203-602] Inlining function 'table_lookup_4oPi_hotbm<52, 61>' into 'range_redux_payne_hanek_hotbm<61, double, 63, 63>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:495) automatically.
+INFO: [XFORM 203-602] Inlining function 'clz<61, 124, 0>' into 'range_redux_payne_hanek_hotbm<61, double, 63, 63>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:523) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::data' into 'fp_struct<double>::to_double' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:512) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_double' into 'fp_struct<double>::to_ieee' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:526) automatically.
+INFO: [XFORM 203-602] Inlining function 'clz' into 'scaled_fixed2ieee<63, 1>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:435) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::set_mantissa' into 'scaled_fixed2ieee<63, 1>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:463) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_ieee' into 'scaled_fixed2ieee<63, 1>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:466) automatically.
+INFO: [XFORM 203-602] Inlining function 'hotbm_::value_list<double>::sin_or_cos_approximation<63, 63>' into 'hotbm_::sin_or_cos<double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:278) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_ieee' into 'hotbm_::sin_or_cos<double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:315) automatically.
+INFO: [XFORM 203-602] Inlining function 'hotbm_::sin' into 'sin' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/c/sincosdouble.cpp:7) automatically.
+INFO: [XFORM 203-602] Inlining function 'sin' into 'sen' (../../C++/sen.cpp:14) automatically.
+WARNING: [SYNCHK 200-23] r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:425: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:04 ; elapsed = 00:00:43 . Memory (MB): peak = 257.277 ; gain = 172.473
+INFO: [XFORM 203-102] Automatically partitioning small array 'out_bits.V' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:422) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'c' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:433) completely based on array size.
+INFO: [XFORM 203-101] Partitioning array 'swap_table.1'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'swap_table'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'neg_sin_table'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'neg_cos_table'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'out_bits.V' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:422) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'c' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:433) in dimension 1 completely.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::expv' into 'range_redux_payne_hanek_hotbm<61, double, 63, 63>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:469) automatically.
+INFO: [XFORM 203-602] Inlining function 'table_lookup_4oPi_hotbm<52, 61>' into 'range_redux_payne_hanek_hotbm<61, double, 63, 63>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:495) automatically.
+INFO: [XFORM 203-602] Inlining function 'clz<61, 124, 0>' into 'range_redux_payne_hanek_hotbm<61, double, 63, 63>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:523) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::data' into 'fp_struct<double>::to_double' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:512) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_double' into 'fp_struct<double>::to_ieee' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:526) automatically.
+INFO: [XFORM 203-602] Inlining function 'clz' into 'scaled_fixed2ieee<63, 1>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:435) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::set_mantissa' into 'scaled_fixed2ieee<63, 1>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:463) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_ieee' into 'scaled_fixed2ieee<63, 1>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:466) automatically.
+INFO: [XFORM 203-602] Inlining function 'range_redux_payne_hanek_hotbm<61, double, 63, 63>' into 'hotbm_::sin_or_cos<double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:267) automatically.
+INFO: [XFORM 203-602] Inlining function 'hotbm_::value_list<double>::sin_or_cos_approximation<63, 63>' into 'hotbm_::sin_or_cos<double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:278) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_ieee' into 'hotbm_::sin_or_cos<double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:315) automatically.
+INFO: [XFORM 203-602] Inlining function 'hotbm_::sin' into 'sin' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/c/sincosdouble.cpp:7) automatically.
+INFO: [XFORM 203-602] Inlining function 'sin' into 'sen' (../../C++/sen.cpp:14) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:452:51) to (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:467:1) in function 'scaled_fixed2ieee<63, 1>'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:237:18) to (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:315:12) in function 'hotbm_::sin_or_cos<double>'... converting 10 basic blocks.
+INFO: [XFORM 203-602] Inlining function 'hotbm_::sin_or_cos<double>' into 'sen' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/common/hls_hotbm_double.cpp:139->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/c/sincosdouble.cpp:7->../../C++/sen.cpp:14) automatically.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:05 ; elapsed = 00:00:45 . Memory (MB): peak = 331.250 ; gain = 246.445
+WARNING: [XFORM 203-631] Renaming function 'scaled_fixed2ieee<63, 1>' to 'scaled_fixed2ieee' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:109:37)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:06 ; elapsed = 00:00:46 . Memory (MB): peak = 364.441 ; gain = 279.637
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'sen' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'scaled_fixed2ieee' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 46.801 seconds; current allocated memory: 303.062 MB.
+INFO: [HLS 200-434] Only 0 loops out of a total 3 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.603 seconds; current allocated memory: 303.566 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'sen' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.902 seconds; current allocated memory: 304.828 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.377 seconds; current allocated memory: 305.647 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'scaled_fixed2ieee' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'sen_mux_42_32_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'scaled_fixed2ieee'.
+INFO: [HLS 200-111]  Elapsed time: 1.459 seconds; current allocated memory: 306.384 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'sen' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'sen/Entrada' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'sen' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'sen_ref_4oPi_table_256_V' to 'sen_ref_4oPi_tablbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'sen_fourth_order_double_4' to 'sen_fourth_order_cud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'sen_fourth_order_double_5' to 'sen_fourth_order_dEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'sen_fourth_order_double_6' to 'sen_fourth_order_eOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'sen_fourth_order_double_7' to 'sen_fourth_order_fYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'sen_fourth_order_double_s' to 'sen_fourth_order_g8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'sen_dmul_64ns_64ns_64_6_max_dsp_1' to 'sen_dmul_64ns_64nhbi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'sen_ddiv_64ns_64ns_64_31_1' to 'sen_ddiv_64ns_64nibs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'sen_mul_170ns_53ns_223_5_1' to 'sen_mul_170ns_53njbC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'sen_mul_49ns_49ns_98_2_1' to 'sen_mul_49ns_49nskbM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'sen_mul_56ns_52s_108_2_1' to 'sen_mul_56ns_52s_lbW' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'sen_mul_49ns_44s_93_2_1' to 'sen_mul_49ns_44s_mb6' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'sen_mul_42ns_33ns_75_2_1' to 'sen_mul_42ns_33nsncg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'sen_mul_64s_63ns_126_5_1' to 'sen_mul_64s_63ns_ocq' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'sen_ddiv_64ns_64nibs': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sen_dmul_64ns_64nhbi': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sen_mul_170ns_53njbC': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sen_mul_42ns_33nsncg': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sen_mul_49ns_44s_mb6': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sen_mul_49ns_49nskbM': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sen_mul_56ns_52s_lbW': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sen_mul_64s_63ns_ocq': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sen_mux_164_1_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sen_mux_83_1_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'sen'.
+INFO: [HLS 200-111]  Elapsed time: 0.957 seconds; current allocated memory: 308.243 MB.
+INFO: [RTMG 210-282] Generating pipelined core: 'sen_mul_170ns_53njbC_MulnS_0'
+INFO: [RTMG 210-282] Generating pipelined core: 'sen_mul_49ns_49nskbM_MulnS_1'
+INFO: [RTMG 210-282] Generating pipelined core: 'sen_mul_56ns_52s_lbW_MulnS_2'
+INFO: [RTMG 210-282] Generating pipelined core: 'sen_mul_49ns_44s_mb6_MulnS_3'
+INFO: [RTMG 210-282] Generating pipelined core: 'sen_mul_42ns_33nsncg_MulnS_4'
+INFO: [RTMG 210-282] Generating pipelined core: 'sen_mul_64s_63ns_ocq_MulnS_5'
+INFO: [RTMG 210-279] Implementing memory 'sen_ref_4oPi_tablbkb_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'sen_fourth_order_cud_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'sen_fourth_order_dEe_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'sen_fourth_order_eOg_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'sen_fourth_order_fYi_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'sen_fourth_order_g8j_rom' using distributed ROMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:11 ; elapsed = 00:00:56 . Memory (MB): peak = 373.887 ; gain = 289.082
+INFO: [SYSC 207-301] Generating SystemC RTL for sen.
+INFO: [VHDL 208-304] Generating VHDL RTL for sen.
+INFO: [VLOG 209-307] Generating Verilog RTL for sen.
+INFO: [HLS 200-112] Total elapsed time: 55.945 seconds; peak allocated memory: 308.243 MB.
+==============================================================
+File generated on Mon Aug 24 15:16:23 -0300 2020
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xa7a12tcsg325-1q'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file '../../C++/sen.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:23 . Memory (MB): peak = 102.145 ; gain = 17.012
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:23 . Memory (MB): peak = 102.145 ; gain = 17.012
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:02 ; elapsed = 00:00:26 . Memory (MB): peak = 196.172 ; gain = 111.039
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::expv' into 'range_redux_payne_hanek_hotbm<29, float, 29, 29>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:469) automatically.
+INFO: [XFORM 203-602] Inlining function 'table_lookup_4oPi_hotbm<23, 29>' into 'range_redux_payne_hanek_hotbm<29, float, 29, 29>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:495) automatically.
+INFO: [XFORM 203-602] Inlining function 'clz<29, 58, 0>' into 'range_redux_payne_hanek_hotbm<29, float, 29, 29>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:523) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::data' into 'fp_struct<float>::to_float' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:348) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::to_float' into 'fp_struct<float>::to_ieee' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:369) automatically.
+INFO: [XFORM 203-602] Inlining function 'clz' into 'scaled_fixed2ieee<29, 1>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:307) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::set_mantissa' into 'scaled_fixed2ieee<29, 1>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:340) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::to_ieee' into 'scaled_fixed2ieee<29, 1>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:342) automatically.
+INFO: [XFORM 203-602] Inlining function 'hotbm_::value_list<float>::sin_or_cos_approximation<29, 29>' into 'hotbm_::sin_or_cos<float>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:278) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::to_ieee' into 'hotbm_::sin_or_cos<float>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:315) automatically.
+INFO: [XFORM 203-602] Inlining function 'hotbm_::sin' into 'sinf' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/c/sincosfloat.cpp:7) automatically.
+INFO: [XFORM 203-602] Inlining function 'sinf' into 'std::sin' (C:/Xilinx/Vivado/2018.3/win64/tools/clang/bin\..\lib\clang\3.1/../../../include/c++/4.5.2\cmath:402) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::sin' into 'sen' (../../C++/sen.cpp:13) automatically.
+WARNING: [SYNCHK 200-23] r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:297: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:27 . Memory (MB): peak = 231.914 ; gain = 146.781
+INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-1' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:295) in function 'scaled_fixed2ieee<29, 1>' automatically.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:295) in function 'scaled_fixed2ieee<29, 1>' completely with a factor of 1.
+INFO: [XFORM 203-102] Automatically partitioning small array 'out_bits.V' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:294) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'c' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:305) completely based on array size.
+INFO: [XFORM 203-101] Partitioning array 'swap_table.1'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'swap_table'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'neg_sin_table'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'neg_cos_table'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'out_bits.V' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:294) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'c' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:305) in dimension 1 completely.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::expv' into 'range_redux_payne_hanek_hotbm<29, float, 29, 29>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:469) automatically.
+INFO: [XFORM 203-602] Inlining function 'table_lookup_4oPi_hotbm<23, 29>' into 'range_redux_payne_hanek_hotbm<29, float, 29, 29>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:495) automatically.
+INFO: [XFORM 203-602] Inlining function 'clz<29, 58, 0>' into 'range_redux_payne_hanek_hotbm<29, float, 29, 29>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:523) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::data' into 'fp_struct<float>::to_float' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:348) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::to_float' into 'fp_struct<float>::to_ieee' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:369) automatically.
+INFO: [XFORM 203-602] Inlining function 'clz' into 'scaled_fixed2ieee<29, 1>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:307) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::set_mantissa' into 'scaled_fixed2ieee<29, 1>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:340) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::to_ieee' into 'scaled_fixed2ieee<29, 1>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:342) automatically.
+INFO: [XFORM 203-602] Inlining function 'hotbm_::value_list<float>::sin_or_cos_approximation<29, 29>' into 'hotbm_::sin_or_cos<float>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:278) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::to_ieee' into 'hotbm_::sin_or_cos<float>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:315) automatically.
+INFO: [XFORM 203-602] Inlining function 'hotbm_::sin' into 'sinf' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/c/sincosfloat.cpp:7) automatically.
+INFO: [XFORM 203-602] Inlining function 'sinf' into 'std::sin' (C:/Xilinx/Vivado/2018.3/win64/tools/clang/bin\..\lib\clang\3.1/../../../include/c++/4.5.2\cmath:402) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::sin' into 'sen' (../../C++/sen.cpp:13) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:314:9) to (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:316:9) in function 'scaled_fixed2ieee<29, 1>'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:324:50) to (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:343:1) in function 'scaled_fixed2ieee<29, 1>'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:460:7) to (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:543:1) in function 'range_redux_payne_hanek_hotbm<29, float, 29, 29>'... converting 8 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:237:18) to (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:315:12) in function 'hotbm_::sin_or_cos<float>'... converting 6 basic blocks.
+INFO: [XFORM 203-602] Inlining function 'range_redux_payne_hanek_hotbm<29, float, 29, 29>' into 'hotbm_::sin_or_cos<float>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:267) automatically.
+INFO: [XFORM 203-602] Inlining function 'hotbm_::sin_or_cos<float>' into 'sen' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/common/hls_hotbm_float.cpp:122->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/c/sincosfloat.cpp:7->C:/Xilinx/Vivado/2018.3/win64/tools/clang/bin\..\lib\clang\3.1/../../../include/c++/4.5.2\cmath:402->../../C++/sen.cpp:13) automatically.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:28 . Memory (MB): peak = 298.789 ; gain = 213.656
+WARNING: [XFORM 203-631] Renaming function 'scaled_fixed2ieee<29, 1>' to 'scaled_fixed2ieee' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:109:37)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:05 ; elapsed = 00:00:29 . Memory (MB): peak = 319.992 ; gain = 234.859
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'sen' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'scaled_fixed2ieee' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 29.259 seconds; current allocated memory: 261.249 MB.
+INFO: [HLS 200-434] Only 0 loops out of a total 2 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.134 seconds; current allocated memory: 261.497 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'sen' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.389 seconds; current allocated memory: 262.287 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.252 seconds; current allocated memory: 262.786 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'scaled_fixed2ieee' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'scaled_fixed2ieee'.
+INFO: [HLS 200-111]  Elapsed time: 0.354 seconds; current allocated memory: 263.306 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'sen' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'sen/Entrada' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'sen' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'sen_ref_4oPi_table_100_V' to 'sen_ref_4oPi_tablbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'sen_second_order_float_2' to 'sen_second_order_cud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'sen_second_order_float_3' to 'sen_second_order_dEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'sen_second_order_float_s' to 'sen_second_order_eOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'sen_mul_80ns_24ns_104_5_1' to 'sen_mul_80ns_24nsfYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'sen_mul_mul_15ns_15ns_30_1_1' to 'sen_mul_mul_15ns_g8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'sen_mul_mul_15ns_15s_30_1_1' to 'sen_mul_mul_15ns_hbi' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'sen_mul_80ns_24nsfYi': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sen_mul_mul_15ns_g8j': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sen_mul_mul_15ns_hbi': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sen_mux_164_1_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sen_mux_83_1_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'sen'.
+INFO: [HLS 200-111]  Elapsed time: 0.378 seconds; current allocated memory: 264.506 MB.
+INFO: [RTMG 210-282] Generating pipelined core: 'sen_mul_80ns_24nsfYi_MulnS_0'
+INFO: [RTMG 210-279] Implementing memory 'sen_ref_4oPi_tablbkb_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'sen_second_order_cud_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'sen_second_order_dEe_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'sen_second_order_eOg_rom' using distributed ROMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:07 ; elapsed = 00:00:33 . Memory (MB): peak = 325.293 ; gain = 240.160
+INFO: [SYSC 207-301] Generating SystemC RTL for sen.
+INFO: [VHDL 208-304] Generating VHDL RTL for sen.
+INFO: [VLOG 209-307] Generating Verilog RTL for sen.
+INFO: [HLS 200-112] Total elapsed time: 33.552 seconds; peak allocated memory: 264.506 MB.
